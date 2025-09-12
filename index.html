@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Movimiento Vivo — Academia de baile. Clases presenciales y online en salsa, bachata, hip hop, ballet, danza contemporánea y zumba.">
+  <meta name="keywords" content="baile, salsa, bachata, hip hop, ballet, zumba, academia">
+  <meta name="author" content="Movimiento Vivo / TuNombre">
+  <title>Movimiento Vivo — Academia de baile</title>
+
+  <!-- Open Graph-->
+  <meta property="og:title" content="Movimiento Vivo — Academia de baile">
+  <meta property="og:description" content="Transforma tu vida a través del baile: clases presenciales y online.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <h1 class="site-title">Movimiento Vivo</h1>
+      </a>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <button id="nav-toggle" aria-controls="nav-list" aria-expanded="false">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#estilos">Estilos</a></li>
+          <li><a href="#horario">Horario</a></li>
+          <li><a href="#inscripcion">Inscripción</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Transforma tu vida con movimiento y ritmo</h2>
+        <p>Clases para todas las edades y niveles — presenciales y en línea. ¡Inscríbete y prueba la primera clase gratis!</p>
+        <a class="cta" href="#inscripcion">Inscribirme</a>
+      </div>
+    </section>
+
+    <!-- Beneficios-->
+    <section id="beneficios" class="cards-section">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Profesores certificados</h3>
+          <p>Instructores con formación pedagógica y experiencia profesional.</p>
+        </article>
+        <article class="card">
+          <h3>Modalidad flexible</h3>
+          <p>Clases presenciales y online para adaptarse a tu ritmo de vida.</p>
+        </article>
+        <article class="card">
+          <h3>Comunidad</h3>
+          <p>Eventos, prácticas sociales y presentaciones periódicas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Estilos con enlaces a páginas individuales  -->
+    <section id="estilos" class="styles-section">
+      <h2>Estilos que enseñamos</h2>
+      <div class="styles-grid">
+        <a class="style-card" href="salsa.html"><img src="salsa.jpeg" alt="Salsa"><span>Salsa</span></a>
+        <a class="style-card" href="bachata.html"><img src="bachata.jpg" alt="Bachata"><span>Bachata</span></a>
+        <a class="style-card" href="hiphop.html"><img src="hiphop.jpeg" alt="Hip hop"><span>Hip hop</span></a>
+        <a class="style-card" href="ballet.html"><img src="ballet.jpg" alt="Ballet"><span>Ballet</span></a>
+        <a class="style-card" href="contemporanea.html"><img src="contempo.jpeg" alt="Danza contemporánea"><span>Danza contemporánea</span></a>
+        <a class="style-card" href="zumba.html"><img src="zumba.jpeg" alt="Zumba"><span>Zumba</span></a>
+      </div>
+    </section>
+
+    <!-- Tabla  -->
+    <section id="horario" class="table-section">
+      <h2>Horario de clases</h2>
+      <div class="table-wrap" role="region" aria-labelledby="horario">
+        <table>
+          <caption>Horario semanal de Movimiento Vivo</caption>
+          <thead>
+            <tr>
+              <th>Estilo</th>
+              <th>Día</th>
+              <th>Hora</th>
+              <th>Modalidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Salsa</td><td>Lunes y Miércoles</td><td>19:00</td><td>Presencial</td></tr>
+            <tr><td>Bachata</td><td>Martes y Jueves</td><td>18:00</td><td>Online</td></tr>
+            <tr><td>Hip hop</td><td>Viernes</td><td>17:00</td><td>Presencial</td></tr>
+            <tr><td>Ballet</td><td>Sábado</td><td>10:00</td><td>Presencial</td></tr>
+            <tr><td>Zumba</td><td>Domingo</td><td>11:00</td><td>Online</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="inscripcion" class="form-section">
+      <h2>Formulario de inscripción</h2>
+      <form id="form-inscripcion" action="#" method="post" novalidate>
+        <div class="form-grid">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" required>
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel">
+
+          <label for="estilo-preferido">Estilo preferido</label>
+          <select id="estilo-preferido" name="estilo_preferido">
+            <option value="salsa">Salsa</option>
+            <option value="bachata">Bachata</option>
+            <option value="hiphop">Hip hop</option>
+            <option value="ballet">Ballet</option>
+            <option value="contemporanea">Contemporánea</option>
+            <option value="zumba">Zumba</option>
+          </select>
+
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Enviar inscripción</button>
+          <button type="reset" class="secondary">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <p>Dirección: Calle Ejemplo 123, Ciudad — Tel: (55) 1234 5678 — Email: info@movimientovivo.mx</p>
+      <p>Síguenos en redes: <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© Movimiento Vivo — Todos los derechos reservados. Diseño web por <strong>Andrea Rodriguez Patiño y Emilio Sarmiento Almanza</strong>.</p>
+      <nav aria-label="Enlaces de pie de página">
+        <a href="aviso-privacidad.html">Aviso de privacidad</a> ·
+        <a href="terminos.html">Términos</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
